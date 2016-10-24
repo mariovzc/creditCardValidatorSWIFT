@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CreditCardValidatorSWIFT" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="FxW-sg-aIj"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wk4-19-E1W">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uEh-0M-ZgI"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Card Validator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jl9-gQ-Vhb">
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWp-6S-aRL">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="1w9-mB-5MQ"/>
+                                    <constraint firstAttribute="width" constant="61" id="Zfu-ix-Gx8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BE3-oH-ttX">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgg-dX-BmY">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="KjZ-Vr-qs6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Validate">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="validateCard" destination="BYZ-38-t0r" eventType="touchUpInside" id="hBA-Rb-Mo5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wk4-19-E1W" firstAttribute="top" secondItem="Jl9-gQ-Vhb" secondAttribute="bottom" constant="8" symbolic="YES" id="14P-Kq-3vd"/>
+                            <constraint firstItem="cWp-6S-aRL" firstAttribute="top" secondItem="Wk4-19-E1W" secondAttribute="bottom" constant="8" symbolic="YES" id="42W-AR-Xov"/>
+                            <constraint firstItem="Jl9-gQ-Vhb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="Ce6-Nr-d9I"/>
+                            <constraint firstItem="Wk4-19-E1W" firstAttribute="leading" secondItem="cWp-6S-aRL" secondAttribute="leading" id="ETp-Y3-ZdZ"/>
+                            <constraint firstItem="Jl9-gQ-Vhb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="FSz-MU-Q2t"/>
+                            <constraint firstItem="qgg-dX-BmY" firstAttribute="top" secondItem="BE3-oH-ttX" secondAttribute="bottom" constant="44" id="Gys-2k-uie"/>
+                            <constraint firstItem="Wk4-19-E1W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NmU-Fd-18v"/>
+                            <constraint firstItem="Jl9-gQ-Vhb" firstAttribute="trailing" secondItem="Wk4-19-E1W" secondAttribute="trailing" id="Pbs-BM-IfI"/>
+                            <constraint firstItem="FxW-sg-aIj" firstAttribute="centerX" secondItem="qgg-dX-BmY" secondAttribute="centerX" id="TYW-o1-RBe"/>
+                            <constraint firstItem="Wk4-19-E1W" firstAttribute="trailing" secondItem="BE3-oH-ttX" secondAttribute="trailing" id="UB3-Vr-mYv"/>
+                            <constraint firstItem="FxW-sg-aIj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VxD-hX-uao"/>
+                            <constraint firstItem="cWp-6S-aRL" firstAttribute="baseline" secondItem="BE3-oH-ttX" secondAttribute="baseline" id="ZYa-Kt-R7o"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cWp-6S-aRL" secondAttribute="bottom" constant="504" id="bvc-ix-IK9"/>
+                            <constraint firstItem="BE3-oH-ttX" firstAttribute="leading" secondItem="cWp-6S-aRL" secondAttribute="trailing" constant="19" id="ezK-eu-WMB"/>
+                            <constraint firstItem="cWp-6S-aRL" firstAttribute="firstBaseline" secondItem="BE3-oH-ttX" secondAttribute="firstBaseline" id="gAc-iM-CCH"/>
+                            <constraint firstItem="FxW-sg-aIj" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="lvg-Vc-50w"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qgg-dX-BmY" secondAttribute="bottom" constant="399" id="mfN-9V-fRh"/>
+                            <constraint firstAttribute="trailing" secondItem="FxW-sg-aIj" secondAttribute="trailing" id="nJg-nn-se5"/>
+                            <constraint firstItem="Wk4-19-E1W" firstAttribute="centerX" secondItem="qgg-dX-BmY" secondAttribute="centerX" id="us0-hj-03i"/>
+                            <constraint firstItem="FxW-sg-aIj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zc2-BR-hvb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardNumberTextField" destination="Wk4-19-E1W" id="cmI-NL-MdO"/>
+                        <outlet property="cardTypeLabel" destination="BE3-oH-ttX" id="q1U-8c-v0M"/>
+                        <outlet property="validateButton" destination="qgg-dX-BmY" id="Zmk-qb-Ocg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="1024" height="768"/>
+    </resources>
+</document>
